@@ -8,7 +8,7 @@ let screenshakeframe = 0;
 let balls = [];
 let particles = [];
 
-/*s
+/*
 - colour
 - text size changing (with easing)
 - screen shake
@@ -53,9 +53,12 @@ function draw() {
     btn.position(width/2-btn.width/2 + transx,height/2-btn.height/2 + transy)
 	}
   push()
+  fill(255)
+  circle(width/2-50, height/2-30, 20)
+  circle(width/2+50, height/2-30, 20)
   fill(0)
-  circle(width/2-40, height/2-40, 5)
-  circle(width/2+40, height/2-40, 5)
+  circle(width/2-50, height/2-30, 7)
+  circle(width/2+50, height/2-30, 7)
   pop()
   if (doReduceTextSize) {
     if (currenttextsize == targettextsize) {
